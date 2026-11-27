@@ -44,7 +44,7 @@ namespace _10._22lab
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text += "/";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace _10._22lab
 
         private void button21_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text += "-";
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace _10._22lab
 
         private void button28_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "=";
+            textBox1.Text = new System.Data.DataTable().Compute(textBox1.Text, null).ToString();
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -99,8 +99,12 @@ namespace _10._22lab
 
         private void button24_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0") textBox1.Text = "1";
-            else textBox1.Text += "1";
+        {
+            if (textBox1.Text == "0")
+                textBox1.Text = "3";
+            else
+                textBox1.Text += "3";
+        }
         }
 
         private void button27_Click(object sender, EventArgs e)
@@ -126,6 +130,16 @@ namespace _10._22lab
         private void button4_Click_1(object sender, EventArgs e)
         {
             textBox1.Text = "0";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (double.Parse(textBox1.Text) / 100).ToString();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "*";
         }
     }
 }

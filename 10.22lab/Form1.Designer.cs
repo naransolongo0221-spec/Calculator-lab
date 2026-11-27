@@ -210,6 +210,7 @@
             button13.TabIndex = 13;
             button13.Text = "%";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // button14
             // 
@@ -251,6 +252,7 @@
             button18.TabIndex = 18;
             button18.Text = "*";
             button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
             // 
             // menuStrip1
             // 
